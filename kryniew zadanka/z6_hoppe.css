@@ -1,0 +1,21 @@
+/* Definiowanie zmiennych kolorów */
+:root {
+    --color-blue: blue;
+    --color-green: green;
+}
+
+/* Styl dla body */
+body {
+    color: var(--color-blue);  /* Kolor tekstu w body będzie niebieski */
+    font-size: 30pt;
+}
+
+/* Styl dla p */
+p {
+    font-size: 20pt;
+}
+
+/* Dodanie klasy do parzystych akapitów z kolorem zielonym */
+p:nth-child(even) {
+    color: var(--color-green);
+}

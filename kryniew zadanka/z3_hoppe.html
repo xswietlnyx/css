@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instrukcja dotycząca modyfikacji wyglądu strony przy użyciu CSS">
+    <meta name="keywords" content="CSS, arkusze stylów, formatowanie, HTML">
+    <title>Instrukcja CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            color: #0056b3;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .header-row td {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #fff;  /* Zmienione tło na biały */
+            color: #333;  /* Ciemny kolor tekstu, aby był czytelny */
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr class="header-row">
+                <td colspan="2">Cechy modyfikowania formatowania</td>
+            </tr>
+            <tr>
+                <th>w HTML</th>
+                <th>w CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Modyfikacja wyglądu elementów strony jest bardzo żmudna (atrybuty i znaczniki, które za to odpowiadają, są porozrzucane w różnych miejscach kodu, mieszając się ze strukturą dokumentu).</td>
+                <td>Rozdzielenie <strong>struktury</strong> i <strong>prezentacji</strong> dokumentów, czyli: wszystkie polecenia dotyczące formatowania można umieścić w jednym miejscu (tzw. arkuszu) i powiązać je z konkretnymi elementami, wstawionymi za pomocą czystego (X)HTML. Taki sposób sprawia, że modyfikacja wyglądu stron może przebiegać dużo sprawniej.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Nowe możliwości CSS</h2>
+    <ul>
+        1)<b>Przestarzałe atrybuty i znaczniki,</b> znajdujące się bezpośrednio w składni HTML, które
+dotyczą formatowania (elementy zdeprecjonowane), będą stopniowo wycofywane przez 
+producentów przeglądarek internetowych, na rzecz rekomendowanych analogicznych 
+deklaracji CSS. <br>
+2)Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej <b> przejrzyste i 
+krótsze.</b> <br>
+3)Style pozwalają w <b>łatwy sposób zarządzać</b> całą serią dokumentów, poprzez stosowanie 
+zewnętrznych arkuszy stylów.<br>
+4) Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. W 
+<b>jednym miejscu określamy wszystkie atrybuty formatowania</b> (których może być bardzo 
+dużo), odnoszące się do wielu elementów, które mają wyglądać tak samo. Bezpośrednio przy 
+elemencie wystarczy podać tylko nazwę klasy i nie musimy już wypisywać dużej ilości 
+poleceń. Znacznie przyspiesza to późniejszą modyfikację strony, ponieważ zmian 
+dokonujemy tylko w jednym miejscu, a wpływają one na wiele elementów jednocześnie.<br>
+5)Możliwość<b> stosowania różnorodnych jednostek oraz sposobów definiowania kolorów. </b><br>
+6)Różne wartości <b> pogrubienia czcionki </b> (9 rodzajów) <br>
+7)<b>Dodatkowe możliwości formatowania tekstu </b><br>
+8)<b>Efektowne filtry graficzne. </b> <br>
+9)Dodatkowe możliwości<b> określenia wyglądu dokumentów podczas ich drukowania.</b>
+<u>Uwaga: </u>
+W ciągłym opracowaniu są <b> style poziomu trzeciego (CSS 3)</b>, które oferują jeszcze więcej 
+rozwiązań. Aby dowiedzieć się więcej, sprawdzaj stronę organizacji W3C oraz najnowsze 
+specyfikacje.
+<b>Wady CSS</b> <br>
+<bR>
+<bR>
+<bR>
+1. złożona specyfikacja (składnia) nietolerująca, rzadnych błędów składniowych,<bR>
+2. brak sygnalizacji błędów podczas wykonywania styli CSS oraz podczas ich realizacji,<bR>
+3. błędne obsługiwanie CSS przez różne przeglądarki,<bR>
+    </ul>
+
+</body>
+</html>
